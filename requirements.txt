@@ -1,0 +1,7 @@
+pip~=22.3.1
+setuptools~=65.5.1
+inquirerpy~=0.3.4
+
+wheel~=0.38.2
+pfzy~=0.3.4
+wcwidth~=0.2.5

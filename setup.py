@@ -14,7 +14,10 @@ setuptools.setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: POSIX :: Linux"
     ],
-    packages=[],
-    entry_points={"console_scripts": ["s="]},
+    dependencies=[
+        "inquirerpy ~= 0.3.4"
+    ],
+    packages=["pocket"],
+    entry_points={"console_scripts": ["s=pocket.__main__:main"]},
     python_requires=">=3.6",
 )
