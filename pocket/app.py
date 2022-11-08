@@ -34,8 +34,8 @@ class App:
             choice = inquirer.fuzzy(
                 message="Select:",
                 choices=[
-                    *self.ssh_dict,
-                    Choice(value=None, name="Exit")
+                    Choice(value=None, name="Exit"),
+                    *self.ssh_dict
                 ]
             ).execute()
             clear()
@@ -57,8 +57,7 @@ class App:
                     connect(ip, action)
 
             else:
-                print('\nEasy peasy')
-                input('\nPress any key to continue . . .')
+                print('\nEasy peasy\n')
                 break
 
     def run(self):

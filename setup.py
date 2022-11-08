@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="ssh-pocket",
-    version="1.0.0",
+    version="1.0.1",
     author="Dawn",
     author_email="congminh292k@gmail.com",
     description="Easy peasy ssh choosey",
