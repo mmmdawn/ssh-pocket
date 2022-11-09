@@ -21,7 +21,7 @@ File `$HOME/.ssh/pocket.json` with following form:
 }
 ```
 
-Or import using `si` to create the above `json` file:
+Or use `si` command to create the above `json` file:
 ```
 si $FILE
 ```
