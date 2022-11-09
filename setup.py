@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="ssh-pocket",
-    version="1.0.1",
+    version="1.1.0",
     author="Dawn",
     author_email="congminh292k@gmail.com",
     description="Easy peasy ssh choosey",
@@ -18,6 +18,6 @@ setuptools.setup(
         "inquirerpy ~= 0.3.4"
     ],
     packages=["pocket"],
-    entry_points={"console_scripts": ["s=pocket.__main__:main"]},
+    entry_points={"console_scripts": ["s=pocket.__main__:main", "si=pocket.import_ssh:main"]},
     python_requires=">=3.6",
 )
