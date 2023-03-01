@@ -16,11 +16,11 @@ def clear():
 def connect(ip, user):
     terminal = environ.get('TERM')
     if terminal == 'xterm-kitty':
-        command = 'kitty +kitten ssh'
+        command = ['kitty', '+kitten', 'ssh']
     else:
-        command = 'ssh'
-    conn = f'{user}@{ip}'
-    subprocess.run([command, conn])
+        command = ['ssh']
+    conn = [f'{user}@{ip}']
+    subprocess.run(command + conn)
 
 
 class App:
@@ -66,3 +66,7 @@ class App:
 
     def run(self):
         self.home()
+
+
+if __name__ == '__main__':
+    connect('178.128.93.195', 'root')
