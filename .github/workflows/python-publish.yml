@@ -15,6 +15,9 @@ on:
 permissions:
   contents: read
 
+env:
+  NAME: 'production'
+
 jobs:
   deploy:
 
