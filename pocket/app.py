@@ -1,6 +1,6 @@
 import json
 import subprocess
-from os import system, name, path
+from os import system, name, path, environ
 
 from InquirerPy import inquirer
 from InquirerPy.base.control import Choice
@@ -14,7 +14,11 @@ def clear():
 
 
 def connect(ip, user):
-    command = 'ssh'
+    terminal = environ.get('TERM')
+    if terminal == 'xterm-kitty':
+        command = 'kitty +kitten ssh'
+    else:
+        command = 'ssh'
     conn = f'{user}@{ip}'
     subprocess.run([command, conn])
 
