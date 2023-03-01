@@ -17,6 +17,9 @@ setuptools.setup(
     dependencies=[
         "inquirerpy ~= 0.3.4"
     ],
+    install_requires=[
+      "inquirerpy ~= 0.3.4"
+    ],
     packages=["pocket"],
     entry_points={"console_scripts": ["s=pocket.__main__:main", "si=pocket.import_ssh:main"]},
     python_requires=">=3.6",
