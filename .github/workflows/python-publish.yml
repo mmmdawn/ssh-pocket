@@ -14,14 +14,12 @@ on:
 
 permissions:
   contents: read
-
-env:
-  NAME: 'production'
-
+  
 jobs:
   deploy:
 
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
     - uses: actions/checkout@v3
