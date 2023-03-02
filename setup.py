@@ -1,4 +1,8 @@
 import setuptools
+from pathlib import Path
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="ssh-pocket",
@@ -6,6 +10,8 @@ setuptools.setup(
     author="Dawn",
     author_email="congminh292k@gmail.com",
     description="Easy peasy ssh choosey",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     keywords="ssh management tool",
     license="MIT",
     url="https://github.com/mmmdawn/ssh-pocket",
