@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="ssh-pocket",
-    version="1.2.1",
+    version="1.2.3",
     author="Dawn",
     author_email="congminh292k@gmail.com",
     description="Easy peasy ssh choosey",
