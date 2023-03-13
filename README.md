@@ -1,3 +1,5 @@
+[![Upload Python Package](https://github.com/mmmdawn/ssh-pocket/actions/workflows/python-publish.yml/badge.svg)](https://github.com/mmmdawn/ssh-pocket/actions/workflows/python-publish.yml)
+
 # SSH Pocket
 
 ## Installation
