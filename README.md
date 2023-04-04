@@ -23,7 +23,7 @@ File `$HOME/.ssh/pocket.json` with following form:
 }
 ```
 
-Or use `si` command to create the above `json` file:
+**OR** use `si` command to create the above `json` file:
 ```
 si $FILE
 ```
